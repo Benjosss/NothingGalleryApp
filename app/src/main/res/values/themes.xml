@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.NothingGalleryApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+            <!-- Modifier ces couleurs comme souhaité -->
+            <item name="colorPrimary">@color/nothingAD</item>
+            <item name="colorPrimaryDark">@color/nothingAD</item>
+
+    </style>
+
+    <style name="Theme.NothingGalleryApp" parent="Base.Theme.NothingGalleryApp" />
+</resources>

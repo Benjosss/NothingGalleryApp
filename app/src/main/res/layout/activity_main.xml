@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/nothingAD">
+
+    <!-- Nouveau TextView ajouté au-dessus du RelativeLayout -->
+    <TextView
+        android:id="@+id/above_relative_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+
+        android:text="@string/app_name"
+        android:fontFamily="@font/nothing"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/above_relative_text"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/gallery_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:fontFamily="@font/nothing"/>
+
+        <ImageButton
+            android:id="@+id/span_size_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/img_span"
+            android:contentDescription="@string/span_btn_content_desc"
+            tools:ignore="TouchTargetSizeCheck"/>
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_gallery_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relativeLayout"
+        android:layout_marginTop="8dp"
+        />
+
+</RelativeLayout>

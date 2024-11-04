@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Nothing Gallery</string>
+
+
+    <string name="photo_content_desc">Image from gallery</string>
+    <string name="span_btn_content_desc">Square</string>
+</resources>
